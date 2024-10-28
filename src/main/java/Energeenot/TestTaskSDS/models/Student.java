@@ -13,7 +13,7 @@ public class Student {
     private String name;
     private String patronymic;
     private String group;
-    private double averageMark;
+    private Double averageMark;
 
     public Student() {}
 
@@ -65,11 +65,11 @@ public class Student {
         this.group = group;
     }
 
-    public double getAverageMark() {
+    public Double getAverageMark() {
         return averageMark;
     }
 
-    public void setAverageMark(double averageMark) {
+    public void setAverageMark(Double averageMark) {
         this.averageMark = averageMark;
     }
 }
