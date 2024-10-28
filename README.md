@@ -25,9 +25,12 @@ MongoDB установленный локально или доступный ч
     3) Добавление нового студента
     curl -X PUT http://localhost:8080/rest/add -H "Authorization: Bearer your_access_token_here" -H "Content-Type: application/json" -d "{\"surname\": \"Ivanov\", \"name\": \"Ivan\", \"patronymic\": \"Ivanovich\", \"group\": \"A1\", \"averageMark\": 4.5}"
 
-    4) Редактирование студента
+    4) Редактирование всех полей студента
    curl -X POST http://localhost:8080/rest/{id} -H "Authorization: Bearer your_access_token_here" -H "Content-Type: application/json" -d "{\"surname\": \"Petrov\", \"name\": \"Petr\", \"patronymic\": \"Petrovich\", \"group\": \"B2\", \"averageMark\": 4.2}"
 
-    5) Удаление студента 
+    5) Редактирование одного из полей
+   curl -X POST http://localhost:8080/rest/{id} -H "Authorization: Bearer your_access_token_here" -H "Content-Type: application/json" -d "{\"surname\": \"Petrov\"}"
+
+    6) Удаление студента 
     curl -X DELETE http://localhost:8080/rest/{id} -H "Authorization: Bearer your_access_token_here"
    
